@@ -1,6 +1,8 @@
 # Presentation skool20
 
-TODO: description
+## Startup
+* Install dependencies : `npm install`
+* Run server: `npm start`
 
 ## Available Scripts
 
