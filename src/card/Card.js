@@ -1,5 +1,22 @@
+import React, { useState } from "react";
+
+
 
 function Card() {
+    const [cardState, setCardState] = useState("");
+    
+
+    function open_card() {
+        const card = document.getElementById("card");
+        let timer = null;
+        card.setAttribute('class', 'open-half');
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(function () {
+            card.setAttribute('class', 'open-fully');
+            timer = null;
+        }, 1000);
+    }
+
     return (
         <div id="card">
             <div id="card-inside">
@@ -21,7 +38,7 @@ function Card() {
                 <div class="wrap">
                     <h1>Joyeux Noel</h1>
                 </div>
-                <button onClick="open" id="open">&gt;</button>
+                <button onClick={open_card} id="open">&gt;</button>
                 <button id="close">&lt;</button>
             </div>
         </div>
