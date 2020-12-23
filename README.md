@@ -18,7 +18,7 @@ The documentation is located in the [Skool 20 drive](https://drive.google.com/dr
 
 ## Deployment
 The site is avaible live at [https://skool-fullstack20.web.app/]
-
+It should deploy automaticaly when code is pushed to master (through github action)
 
 ## TODO
 - centrer et fixer arbre de Noël 
