@@ -17,6 +17,6 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_TOKEN }}'
           channelId: live
-          projectId: octo-skool-20
+          projectId: skool-fullstack20
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels

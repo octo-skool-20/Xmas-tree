@@ -10,9 +10,8 @@ export default function Tree() {
     }
 
     return (
-        <>
-            <Ball bgColor="#fcc2e9" />
-            <img id="tree" src={christmas_tree} alt="christmas tree png" style={treeStyle}/>
-        </>
+        <div id="xMasTree">
+            <img src={christmas_tree} alt="christmas tree png" style={treeStyle}/>
+        </div>
     );
 }
