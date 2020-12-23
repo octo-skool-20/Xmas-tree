@@ -17,7 +17,7 @@ The documentation is located in the [Skool 20 drive](https://drive.google.com/dr
 
 
 ## Deployment
-TODO
+The site is avaible live at [https://skool-fullstack20.web.app/]
 
 
 ## TODO
