@@ -1,8 +1,9 @@
-import React from "react";
+import React, {useState} from "react";
 import Tree from "./Tree";
 import Ball from "./Ball";
 import FloBall from "./../assets/balls/FloBall.svg";
 import christmas_tree from "../assets/christmas.mp3"
+import Modal from "react-awesome-modal";
 
 
 function Card() {
@@ -16,6 +17,8 @@ function Card() {
     const stopMusic = () => {
         audio.pause()
       }
+    const [isOpen, setIsOpen] = useState(false);
+    const [idSkooler, setIdSkooler] = useState("");
 
     function open_card() {
         const card = document.getElementById("card");
@@ -39,12 +42,23 @@ function Card() {
     }
 
 
-    return (
+    return (<>
+            <Modal visible={isOpen} width="400" height="300" effect="fadeInUp"
+                   onClickAway={() => setIsOpen(false)}>
+                <div>
+                    <h1>Title</h1>
+                    <p>Some Contents</p>
+                    <a href="javascript:void(0);" onClick={() => setIsOpen(false)}>Close</a>
+                </div>
+            </Modal>
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
+                    <Ball id={"flo"} svg={FloBall} onClick={() => {
+                        setIsOpen(true);
+                        console.log("clicked");
+                    }}/>
                     <Tree/>
-                    <Ball id={"flo"} svg={FloBall}/>
                 </div>
             </div>
 
@@ -56,6 +70,7 @@ function Card() {
                 <button onClick={close_card} id="close">&lt;</button>
             </div>
         </div>
+        </>
     );
 }
 
