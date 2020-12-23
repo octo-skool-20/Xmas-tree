@@ -18,8 +18,12 @@ The documentation is located in the [Skool 20 drive](https://drive.google.com/dr
 
 ## Deployment
 The site is avaible live at [https://skool-fullstack20.web.app/]
-It should deploy automaticaly when code is pushed to master (through github action)
-test
+In order to deploy, you need to ask BERN for deployment deployment token.
+Once you have the token, you need to execute the following commands (replace with the token):
+```bash
+sudo npm install -g firebase-tools
+firebase deploy --token "ASK_BERN_FOR_TOKEN
+```
 ## TODO
 - [ ] centrer et fixer arbre de Noël 
 - [ ] ajouter toute les boules
