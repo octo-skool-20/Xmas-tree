@@ -6,6 +6,15 @@ import FloBall from "./../assets/balls/FloBall.svg";
 
 function Card() {
 
+    let audio = new Audio("/christmas.mp3")
+
+    const startMusic = () => {
+        audio.play()
+    }
+
+    const stopMusic = () => {
+        audio.pause()
+      }
 
     function open_card() {
         const card = document.getElementById("card");
@@ -16,6 +25,7 @@ function Card() {
             card.setAttribute('class', 'open-fully');
             timer = null;
         }, 1000);
+        startMusic()
     }
 
     function close_card() {
@@ -24,6 +34,7 @@ function Card() {
         setTimeout(function () {
             card.setAttribute('class', '');
         }, 1000);
+        stopMusic()
     }
 
 
