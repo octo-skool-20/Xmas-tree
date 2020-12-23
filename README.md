@@ -20,4 +20,17 @@ The documentation is located in the [Skool 20 drive](https://drive.google.com/dr
 TODO
 
 
+## TODO
+- centrer et fixer arbre de Noël 
+- ajouter toute les boules
+- intégrer un popin sur chaque boule 
+- améliorer le rendu global (+ responsiveness)
+- intégrer popin sur l'étoile
+- ajouter animation coin de page qui se plie (remplacer bouton chevron ouvrant)
+- écrire un petit message de voeux sur la page de garde
+- écrire une notice sur la 2ème page
+- intégrer la musique 
+- ajouter animation sur la boule lorsque :hoover:
+- ajouter des petits cadeaux 
+- confettis js 
 
