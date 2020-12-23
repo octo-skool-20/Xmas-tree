@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import Tree from "./Tree";
 
 
 function Card() {
-    const [cardState, setCardState] = useState("");
 
 
     function open_card() {
@@ -19,11 +18,9 @@ function Card() {
 
     function close_card() {
         const card = document.getElementById("card");
-        let timer = null;
         card.setAttribute('class', 'open-half');
-        timer = setTimeout(function () {
+        setTimeout(function () {
             card.setAttribute('class', '');
-            timer = null;
         }, 1000);
     }
 
@@ -32,7 +29,7 @@ function Card() {
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
-                    <Tree/>
+                    <Tree />
                 </div>
             </div>
 

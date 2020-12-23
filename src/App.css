@@ -86,8 +86,8 @@ p.signed {
 }
 
 #card-front {
-    background-color: #FF5555;
-    background-image: linear-gradient(top, #FF5555 0%, #FF7777 100%);
+  background-color: #FF5555;
+  background-image: linear-gradient('to top', #FF5555 0%, #FF7777 100%);   
     background-image: -moz-linear-gradient(top, #FF5555 0%, #FF7777 100%);
     background-image: -webkit-linear-gradient(top, #FF5555 0%, #FF7777 100%);
             transform-origin: left;
