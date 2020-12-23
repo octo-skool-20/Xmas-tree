@@ -21,8 +21,9 @@ The site is avaible live at [https://skool-fullstack20.web.app/]
 In order to deploy, you need to ask BERN for deployment deployment token.
 Once you have the token, you need to execute the following commands (replace with the token):
 ```bash
-sudo npm install -g firebase-tools
-firebase deploy --token "ASK_BERN_FOR_TOKEN
+sudo npm install -g firebase-tools # Install firebase dependency
+npm run build # Build react app
+firebase deploy --token "ASK_BERN_FOR_TOKEN" # Deploy to firebase
 ```
 ## TODO
 - [ ] centrer et fixer arbre de Noël 
