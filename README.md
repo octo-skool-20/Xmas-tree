@@ -34,3 +34,6 @@ test
 - [ ] ajouter animation coin de page qui se plie (remplacer bouton chevron ouvrant)
 - [ ] confettis js 
 
+##TRELLO
+
+https://trello.com/b/2Z7rmuXf/xmas-tree
