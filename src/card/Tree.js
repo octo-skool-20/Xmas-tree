@@ -15,10 +15,10 @@ export default function Tree() {
             <Ball bgColor="#fcc2e9" />
             <img id="tree" src={christmas_tree} alt="christmas tree png" style={treeStyle}/>
             <div>
-                <Present left={150}/>
-                <Present left={100}/>
-                <Present left={450}/>
-                <Present left={500}/>
+                <Present left={"20%"}/>
+                <Present left={"10%"}/>
+                <Present left={"70%"}/>
+                <Present left={"60%"}/>
             </div>
         </>
     );
