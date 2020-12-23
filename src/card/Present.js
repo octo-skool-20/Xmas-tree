@@ -13,6 +13,6 @@ export default function (props){
     }
 
     return (
-            <img id="present" src={present} alt="christmas tree png" style={presentStyle}/>
+            <img id="present" src={present} alt="cadeaux" style={presentStyle}/>
     );
 }
