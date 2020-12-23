@@ -1,40 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
+import Modal from 'react-awesome-modal';
 import ball from "../assets/balls/FloBall.svg";
 
 export default function Ball({id, svg}) {
+    const altMsg = id + " ball";
+    const [isOpen, setIsOpen] = useState(false);
 
-        // let circleStyle = {
-        //     display:"inline-block",
-        //     position:'absolute',
-        //     backgroundColor: bgColor,
-        //     borderRadius: "50%",
-        //     width:50,
-        //     height:50,
-        //     left:'0%',
-        //     top:'0%'
-        // };
-        const altMsg = id + " ball";
+    function onModalOpen() {
+        console.log(isOpen);
+        setIsOpen(true);
+        console.log(isOpen);
+        console.log("clicked !");
+    }
 
-        return (
-            <div id={id}>
-                <img src={svg} alt={altMsg} />
+    return (<>
+            <Modal visible={isOpen} width="400" height="300" effect="fadeInUp"
+                   onClickAway={() => setIsOpen(false)}>
+                <div>
+                    <h1>Title</h1>
+                    <p>Some Contents</p>
+                    <a href="javascript:void(0);" onClick={() => setIsOpen(false)}>Close</a>
+                </div>
+            </Modal>
+            <div id={id} onClick={() => setIsOpen(true)}>
+                <img src={svg} alt={altMsg}/>
             </div>
-        );
+        </>
+    );
 }
-// var colors = ["#393E41", "#E94F37", "#1C89BF", "#A1D363",
-//     "#85FFC7", "#297373", "#FF8552", "#A40E4C"];
-//
-// var renderData = [];
-//
-// for (var i = 0; i < colors.length; i++) {
-//     var color = colors[i];
-//     renderData.push(<Circle key={i + color} bgColor={color}/>);
-// }
-// var destination = document.querySelector("#container");
-//
-// ReactDOM.render(
-//     <div>
-//         {renderData}
-//     </div>,
-//     destination
-// );
