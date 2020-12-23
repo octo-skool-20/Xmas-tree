@@ -21,16 +21,19 @@ The site is avaible live at [https://skool-fullstack20.web.app/]
 It should deploy automaticaly when code is pushed to master (through github action)
 test
 ## TODO
-- centrer et fixer arbre de Noël 
-- ajouter toute les boules
-- intégrer un popin sur chaque boule 
-- améliorer le rendu global (+ responsiveness)
-- intégrer popin sur l'étoile
-- ajouter animation coin de page qui se plie (remplacer bouton chevron ouvrant)
-- écrire un petit message de voeux sur la page de garde
-- écrire une notice sur la 2ème page
-- intégrer la musique 
-- ajouter animation sur la boule lorsque :hoover:
-- ajouter des petits cadeaux 
-- confettis js 
+- [ ] centrer et fixer arbre de Noël 
+- [ ] ajouter toute les boules
+- [ ] wip : intégrer un popin sur chaque boule 
+- [ ] améliorer le rendu global (+ responsiveness)
+- [ ] intégrer popin sur l'étoile
+- [ ] wip : écrire un petit message de voeux sur la page de garde
+- [ ] wip : écrire une notice sur la 2ème page
+- [ ] wip : intégrer la musique 
+- [ ] ajouter animation sur la boule lorsque :hoover:
+- [ ] ajouter des petits cadeaux 
+- [ ] ajouter animation coin de page qui se plie (remplacer bouton chevron ouvrant)
+- [ ] confettis js 
 
+##TRELLO
+
+https://trello.com/b/2Z7rmuXf/xmas-tree
