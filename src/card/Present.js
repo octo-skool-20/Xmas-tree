@@ -8,7 +8,7 @@ export default function (props){
         height: "5%",
         resizeMode: 'contain',
         position: 'absolute',
-        bottom: "5%",
+        bottom: props.bottom,
         left: props.left,
     }
 
