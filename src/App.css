@@ -19,6 +19,7 @@ body {
 }
 
 .wrap {
+    display: flex;
     padding: 1.5em 2.5em;
     height: 100%;
     position: relative;
