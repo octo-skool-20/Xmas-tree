@@ -2,6 +2,7 @@ import React from "react";
 import Tree from "./Tree";
 import Ball from "./Ball";
 import FloBall from "./../assets/balls/FloBall.svg";
+import christmas_tree from "../assets/christmas.mp3"
 
 
 function Card() {
