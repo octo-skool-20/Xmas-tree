@@ -5,6 +5,15 @@ import React, { useState } from "react";
 function Card() {
     const [cardState, setCardState] = useState("");
 
+    let audio = new Audio("/christmas.mp3")
+
+    const startMusic = () => {
+        audio.play()
+    }
+
+    const stopMusic = () => {
+        audio.pause()
+      }
 
     function open_card() {
         const card = document.getElementById("card");
@@ -15,6 +24,7 @@ function Card() {
             card.setAttribute('class', 'open-fully');
             timer = null;
         }, 1000);
+        startMusic()
     }
 
     function close_card() {
@@ -25,6 +35,7 @@ function Card() {
             card.setAttribute('class', '');
             timer = null;
         }, 1000);
+        stopMusic()
     }
 
 
