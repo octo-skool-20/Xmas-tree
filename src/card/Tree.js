@@ -17,8 +17,8 @@ export default function Tree() {
             <div>
                 <Present left={"20%"}/>
                 <Present left={"10%"}/>
-                <Present left={"70%"}/>
-                <Present left={"60%"}/>
+                <Present left={"55%"}/>
+                <Present left={"65%"}/>
             </div>
         </>
     );

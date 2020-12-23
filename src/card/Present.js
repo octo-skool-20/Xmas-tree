@@ -4,8 +4,8 @@ import present from "../assets/christmas-present-svg copie.png"
 export default function (props){
     let presentStyle = {
         flex: 1,
-        width: 30,
-        height: 30,
+        width: "5%",
+        height: "5%",
         resizeMode: 'contain',
         position: 'absolute',
         bottom: "5%",
