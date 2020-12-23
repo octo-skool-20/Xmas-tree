@@ -1,19 +1,24 @@
 import React from "react";
+import ball from "../assets/balls/FloBall.svg";
 
-export default function Circle({bgColor}) {
+export default function Ball({id, svg}) {
 
-        let circleStyle = {
-            display:"inline-block",
-            position:'absolute',
-            backgroundColor: bgColor,
-            borderRadius: "50%",
-            width:50,
-            height:50,
-            left:'0%',
-            top:'0%'
-        };
+        // let circleStyle = {
+        //     display:"inline-block",
+        //     position:'absolute',
+        //     backgroundColor: bgColor,
+        //     borderRadius: "50%",
+        //     width:50,
+        //     height:50,
+        //     left:'0%',
+        //     top:'0%'
+        // };
+        const altMsg = id + " ball";
+
         return (
-            <div style={circleStyle}/>
+            <div id={id}>
+                <img src={svg} alt={altMsg} />
+            </div>
         );
 }
 // var colors = ["#393E41", "#E94F37", "#1C89BF", "#A1D363",

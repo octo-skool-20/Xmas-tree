@@ -1,5 +1,7 @@
 import React from "react";
 import Tree from "./Tree";
+import Ball from "./Ball";
+import FloBall from "./../assets/balls/FloBall.svg";
 
 
 function Card() {
@@ -29,7 +31,8 @@ function Card() {
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
-                    <Tree />
+                    <Tree/>
+                    <Ball id={"flo"} svg={FloBall}/>
                 </div>
             </div>
 
