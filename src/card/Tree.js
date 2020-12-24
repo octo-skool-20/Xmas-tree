@@ -4,6 +4,8 @@ import Ball from "./Ball";
 
 export default function Tree() {
     let treeStyle = {
+        display: 'block',
+        margin: '0 auto',
         width:'auto',
         height:'100%',
         maxWidth:'100%'
