@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import Tree from "./Tree";
-import Ball from "./Ball";
 import FloBall from "./../assets/balls/FloBall.svg";
-import christmas_tree from "../assets/christmas.mp3"
 import Modal from "react-awesome-modal";
+import Presentation from "./Presentation";
+import border from "../assets/xmas-border.png";
+import closeIcon from "./../assets/closeIcon.png"
 
 
 function Card() {
@@ -18,7 +19,7 @@ function Card() {
         audio.pause()
       }
     const [isOpen, setIsOpen] = useState(false);
-    const [idSkooler, setIdSkooler] = useState("");
+    const [idSkooler, setIdSkooler] = useState("bern");
 
     function open_card() {
         const card = document.getElementById("card");
@@ -41,24 +42,29 @@ function Card() {
         stopMusic()
     }
 
+    const closeButtonStyle = {
+        position: 'absolute',
+        marginTop: '-12px',
+        left: '46.5%'
+    }
 
     return (<>
-            <Modal visible={isOpen} width="400" height="300" effect="fadeInUp"
+            <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
                    onClickAway={() => setIsOpen(false)}>
-                <div>
-                    <h1>Title</h1>
-                    <p>Some Contents</p>
-                    <a href="javascript:void(0);" onClick={() => setIsOpen(false)}>Close</a>
+                <div id="popin">
+                    <img id="border" style={{maxWidth:'100%',maxHeight:'100%'}} src={border}/>
+                    <Presentation quadri={idSkooler}/>
                 </div>
+                <img style={closeButtonStyle} src={closeIcon} alt={"close button"} onClick={()=>setIsOpen(false)}/>
             </Modal>
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
-                    <Ball id={"flo"} svg={FloBall} onClick={() => {
+                    <Tree id={"flo"} svg={FloBall} onClick={() => {
                         setIsOpen(true);
-                        console.log("clicked");
-                    }}/>
-                    <Tree/>
+                        console.log("clicked");}}
+                          setIsOpen={setIsOpen}
+                    setIdSkooler={setIdSkooler}/>
                 </div>
             </div>
 

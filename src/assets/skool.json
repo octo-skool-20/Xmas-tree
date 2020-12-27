@@ -1,0 +1,43 @@
+{
+  "skoolers": {
+    "bern": {
+      "nom": "Chazaubernard",
+      "prenom": "Baptiste",
+      "competence1": "Dev FullStack",
+      "competence2": "Data engineer",
+      "langProg1": "Java",
+      "langProg2": "Python",
+      "passion1": "Fromage",
+      "passion2": "Randonnée",
+      "minibio": "J'aime les pâtes",
+      "color": "#F5B041"
+    },
+    "masi": {
+      "nom": "Masliah",
+      "prenom": "Simon",
+      "competence1": "Dev FullStack",
+      "competence2": "Blagues drôles :P (hilarantes)",
+      "langProg1": "Kotlin",
+      "langProg2": "PHP",
+      "passion1": "Surf",
+      "passion2": "Bonsais",
+      "minibio": "Simon naquit en l'an de grâce 1989. Il entre chez Octo en 2020 soit 31 ans après",
+      "color": "#fcc2e9"
+    }
+  },
+
+  "mentor": {
+    "miwe": {
+      "nom": "Wegerich",
+      "prenom": "Mickael",
+      "competence1": "Dev FullStack",
+      "competence2": "Homme volant",
+      "langProg1": "Scala",
+      "langProg2": "Typescript",
+      "passion1": "Parachutisme",
+      "passion2": "Basket",
+      "minibio": "La légende raconte qu'il fut un chef de projet dans une ancienne vie",
+      "color": "#4169e1"
+    }
+  }
+}
