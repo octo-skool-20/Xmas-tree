@@ -1,7 +1,7 @@
 {
   "skoolers": {
     "bern": {
-      "nom": "Chazaubernard",
+      "nom": "Chezaubernard",
       "prenom": "Baptiste",
       "competence1": "Dev FullStack",
       "competence2": "Data engineer",
@@ -9,7 +9,7 @@
       "langProg2": "Python",
       "passion1": "Fromage",
       "passion2": "Randonnée",
-      "minibio": "J'aime les pâtes",
+      "minibio": "J'aime les pâtes (bolo, pesto, carbo ...)",
       "color": "#F5B041"
     },
     "masi": {
