@@ -83,7 +83,7 @@ body {
 .left-page-content {
     display: block;
     position: absolute;
-    color:#9655ff;
+    color:#cc0440;
     top:0;
     right:0;
     transform: rotateY(180deg);
@@ -94,6 +94,7 @@ body {
 }
 .left-page-content .title{
     padding-top: 35px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 3em;
 }
@@ -106,8 +107,21 @@ body {
     position: relative;
 }
 
+.card-inside {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 26pt;
+}
+
 hr.solid {
     border-top: 3px solid #fff;
+}
+hr.solid-black {
+    border-top: 3px solid #cc0440;
+    width: 80%;
 }
 hr.normal {
     border-top: 1px solid #fff;
