@@ -66,7 +66,7 @@ function Card() {
                 </div>
             </div>
 
-            <div id="card-front">
+            <div id="card-front" class="folded_corner">
                 <div className="wrap">
                     <h1>Joyeux Noel</h1>
                 </div>

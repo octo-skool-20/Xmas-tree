@@ -562,3 +562,22 @@ mentor en boule ou en étoile ?
     position: absolute;
     right: 0
 }
+
+
+.folded_corner{
+	position:relative;
+	color:#fff;
+	background: #58a;
+	background: linear-gradient(to left top, transparent 50%, rgba(0,0,0,.4) 0) no-repeat / 100%,
+	  linear-gradient(-135deg, transparent 1.5em, #58a 0);
+  }
+  .folded_corner::before{
+	content: ' ';
+	position:absolute;
+	bottom:0;
+	right:0;
+	background: linear-gradient(to left bottom, transparent 50%, rgba(0,0,0,0.1) 0) 100% 0 no-repeat;
+	width: 5em;
+	height: 5em;
+	transform: rotate(90deg)
+  }
