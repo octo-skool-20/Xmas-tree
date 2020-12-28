@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Tree from "./Tree";
 import FloBall from "../assets/balls/ChazBall.svg";
 import Modal from "react-awesome-modal";
@@ -18,7 +18,7 @@ function Card() {
 
     const stopMusic = () => {
         audio.pause()
-      }
+    }
     const [isOpen, setIsOpen] = useState(false);
     const [idSkooler, setIdSkooler] = useState("bern");
     const [photo, setPhoto] = useState(logo);
@@ -51,32 +51,37 @@ function Card() {
     }
 
     return (<>
-            <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
-                   onClickAway={() => setIsOpen(false)}>
-                <div id="popin">
-                    <img id="border" style={{maxWidth:'100%',maxHeight:'100%'}} src={border}/>
-                    <Presentation quadri={idSkooler} photo={photo}/>
-                </div>
-                <img style={closeButtonStyle} src={closeIcon} alt={"close button"} onClick={()=>setIsOpen(false)}/>
-            </Modal>
+        <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
+            onClickAway={() => setIsOpen(false)}>
+            <div id="popin">
+                <img id="border" style={{ maxWidth: '100%', maxHeight: '100%' }} src={border} />
+                <Presentation quadri={idSkooler} photo={photo} />
+            </div>
+            <img style={closeButtonStyle} src={closeIcon} alt={"close button"} onClick={() => setIsOpen(false)} />
+        </Modal>
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
-                    <Tree setIsOpen={setIsOpen} setIdSkooler={setIdSkooler} setPhoto={setPhoto}/>
+                    <Tree setIsOpen={setIsOpen} setIdSkooler={setIdSkooler} setPhoto={setPhoto} />
                 </div>
             </div>
 
             <div id="card-front">
                 <div className="wrap cardContent">
                     <h1>Joyeux Noel</h1>
-                    Lorem ipsum dolor sit <span className="strong-word">amet</span>, consectetur adipiscing elit, sed do eiusmod <span className="strong-word">tempor</span> incididunt ut <span className="strong-word">labore</span> et dolore magna <span className="strong-word">aliqua</span>.
+                    <p>En ces temps de <span className="strong-word">fête</span>, on a tous une mission en <span className="strong-word">tête.</span></p>
+                    
+                    <p>Toute la skool 20 vous souhaite un joyeux <span className="strong-word">Noël</span> et une bonne <span className="strong-word">année !</span> </p>
+                    <hr class="solid"></hr>
+
+                    <p>BERN, MASI, LELA, CEME, WAJI, MIWE, JUFE, BOXI, JAMUE, LRIVA, GASUL, IKRAM, CHAZ</p>
                 </div>
 
                 <button onClick={open_card} id="open">&gt;</button>
                 <button onClick={close_card} id="close">&lt;</button>
             </div>
         </div>
-        </>
+    </>
     );
 }
 

@@ -48,6 +48,7 @@ body {
 }
 
 .cardContent {
+    text-align: center;
     display: block !important;
     color: #fff;
     font: normal 1em/1.2 'Avenir',Arial,Helvetica,sans-serif;
@@ -78,6 +79,10 @@ body {
     padding: 1.5em 2.5em;
     height: 100%;
     position: relative;
+}
+
+hr.solid {
+    border-top: 3px solid #fff;
 }
 #card-front, #card-inside {
   width: 50%;
