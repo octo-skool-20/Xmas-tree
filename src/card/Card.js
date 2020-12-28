@@ -47,7 +47,9 @@ function Card() {
     const closeButtonStyle = {
         position: 'absolute',
         marginTop: '-12px',
-        left: '46.5%'
+        left: '46.5%',
+        cursor: 'pointer',
+        ':hover' : 'box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);'
     }
 
     return (<>
@@ -57,7 +59,9 @@ function Card() {
                     <img id="border" style={{maxWidth:'100%',maxHeight:'100%'}} src={border}/>
                     <Presentation quadri={idSkooler} photo={photo}/>
                 </div>
-                <img style={closeButtonStyle} src={closeIcon} alt={"close button"} onClick={()=>setIsOpen(false)}/>
+                <img id="closeButton" src={closeIcon} alt={"close button"}
+                     onClick={()=>setIsOpen(false)}
+                />
             </Modal>
         <div id="card">
             <div id="card-inside">
