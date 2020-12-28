@@ -47,6 +47,31 @@ body {
     min-height: 400px;
 }
 
+.cardContent {
+    display: block !important;
+    color: #fff;
+    font: normal 1em/1.2 'Avenir',Arial,Helvetica,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    --wp-admin-theme-color: #007cba;
+    --wp-admin-theme-color-darker-10: #006ba1;
+    --wp-admin-theme-color-darker-20: #005a87;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+.strong-word {
+    color: #fff;
+    font: normal 1em/1.2 'Avenir',Arial,Helvetica,sans-serif;
+    box-sizing: border-box;
+    font-weight: bolder;
+    font-family: 'Cutoff Pro';
+    font-size: 30px;
+    line-height: 1.5em;
+    font-style: italic;
+}
 .wrap {
     display: flex;
     justify-content: center;
@@ -581,3 +606,22 @@ mentor en boule ou en étoile ?
 	height: 5em;
 	transform: rotate(90deg)
   }
+#img_star {
+    transition: all 800ms ease-in-out;
+}
+
+#img_star:hover {
+    -ms-transform: rotate(360deg); /* IE 9 */
+    -webkit-transform: rotate(360deg); /* Chrome, Safari, Opera */
+    transform: rotate(360deg);
+}
+
+#closeButton {
+    position: absolute;
+    margin-top: -12px;
+    left: 46.5%;
+    cursor: pointer;
+}
+#closeButton:hover {
+    box-shadow: 2px 2px 2px 1px darkgrey
+}
