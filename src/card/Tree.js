@@ -45,8 +45,25 @@ export default function Tree({setIsOpen, setIdSkooler, setPhoto}) {
     }
 
 
+
     return (
         <div id="xMasTree">
+            <div style={{display:"none"}}>
+                <img src={chaz}></img>
+                <img src={bern}></img>
+                <img src={boxi}></img>
+                <img src={ceme}></img>
+                <img src={elri}></img>
+                <img src={jamu}></img>
+                <img src={jufe}></img>
+                <img src={lela}></img>
+                <img src={masi}></img>
+                <img src={suli}></img>
+                <img src={vaga}></img>
+                <img src={waji}></img>
+                <img src={kram}></img>
+                <img src={miwe}></img>
+            </div>
             <Star clickMeBis={() => {setIsOpen(true);setIdSkooler("miwe");setPhoto(miwe)}} />
             <img src={christmas_tree_no_star} alt="christmas tree png" style={treeStyle}/>
             <Ball id="chaz" svg={ChazBall} onClick={() => {setIsOpen(true);setIdSkooler("chaz");setPhoto(chaz)}} photo={chaz}/>
