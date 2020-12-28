@@ -6,7 +6,6 @@ export default function Ball({id, svg, onClick, photo}) {
     const [onHoverSvg, setOnHoverSvg] = useState(svg);
 
     const onBallHover = function (photo) {
-        console.log("okok")
         setOnHoverSvg(photo)
     }
 

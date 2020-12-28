@@ -6,6 +6,8 @@ import Presentation from "./Presentation";
 import border from "../assets/xmas-border.png";
 import closeIcon from "./../assets/closeIcon.png";
 import logo from "./../assets/octo_logo.png"
+import HomePage from "./HomePage";
+import LeftPage from "./LeftPage";
 
 
 function Card() {
@@ -20,6 +22,7 @@ function Card() {
         audio.pause()
     }
     const [isOpen, setIsOpen] = useState(false);
+    const [isCardOpened, setIsCardOpened] = useState(false);
     const [idSkooler, setIdSkooler] = useState("bern");
     const [photo, setPhoto] = useState(logo);
 
@@ -30,6 +33,7 @@ function Card() {
         if (timer) clearTimeout(timer);
         timer = setTimeout(function () {
             card.setAttribute('class', 'open-fully');
+            setIsCardOpened(true)
             timer = null;
         }, 1000);
         startMusic()
@@ -40,6 +44,7 @@ function Card() {
         card.setAttribute('class', 'open-half');
         setTimeout(function () {
             card.setAttribute('class', '');
+            setIsCardOpened(false)
         }, 1000);
         stopMusic()
     }
@@ -49,7 +54,7 @@ function Card() {
         marginTop: '-12px',
         left: '46.5%',
         cursor: 'pointer',
-        ':hover' : 'box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);'
+        ':hover': 'box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);'
     }
 
     return (<>
@@ -61,16 +66,16 @@ function Card() {
             </div>
             <img style={closeButtonStyle} src={closeIcon} alt={"close button"} onClick={() => setIsOpen(false)} />
         </Modal>
-            <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
-                   onClickAway={() => setIsOpen(false)}>
-                <div id="popin">
-                    <img id="border" style={{maxWidth:'100%',maxHeight:'100%'}} src={border}/>
-                    <Presentation quadri={idSkooler} photo={photo}/>
-                </div>
-                <img id="closeButton" src={closeIcon} alt={"close button"}
-                     onClick={()=>setIsOpen(false)}
-                />
-            </Modal>
+        <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
+            onClickAway={() => setIsOpen(false)}>
+            <div id="popin">
+                <img id="border" style={{ maxWidth: '100%', maxHeight: '100%' }} src={border} />
+                <Presentation quadri={idSkooler} photo={photo} />
+            </div>
+            <img id="closeButton" src={closeIcon} alt={"close button"}
+                onClick={() => setIsOpen(false)}
+            />
+        </Modal>
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
@@ -79,18 +84,16 @@ function Card() {
             </div>
 
             <div id="card-front" class="folded_corner">
-                <div className="wrap cardContent">
-                    <h1>Joyeux Noel</h1>
-                    <p>En ces temps de <span className="strong-word">fête</span>, on a tous une mission en <span className="strong-word">tête.</span></p>
-                    
-                    <p>Toute la skool 20 vous souhaite un joyeux <span className="strong-word">Noël</span> et une bonne <span className="strong-word">année !</span> </p>
-                    <hr class="solid"></hr>
-
-                    <p>BERN, MASI, LELA, CEME, WAJI, MIWE, JUFE, BOXI, JAMUE, LRIVA, GASUL, IKRAM, CHAZ</p>
+                <div className="wrap ">
+                    {!isCardOpened && <HomePage></HomePage>}
                 </div>
+                <div className="left-page-content">
+                    {isCardOpened && <LeftPage></LeftPage>}
 
+                </div>
                 <button onClick={open_card} id="open">&gt;</button>
                 <button onClick={close_card} id="close">&lt;</button>
+
             </div>
         </div>
     </>
