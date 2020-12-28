@@ -4,7 +4,8 @@ import FloBall from "../assets/balls/ChazBall.svg";
 import Modal from "react-awesome-modal";
 import Presentation from "./Presentation";
 import border from "../assets/xmas-border.png";
-import closeIcon from "./../assets/closeIcon.png"
+import closeIcon from "./../assets/closeIcon.png";
+import logo from "./../assets/octo_logo.png"
 
 
 function Card() {
@@ -20,6 +21,7 @@ function Card() {
       }
     const [isOpen, setIsOpen] = useState(false);
     const [idSkooler, setIdSkooler] = useState("bern");
+    const [photo, setPhoto] = useState(logo);
 
     function open_card() {
         const card = document.getElementById("card");
@@ -53,14 +55,14 @@ function Card() {
                    onClickAway={() => setIsOpen(false)}>
                 <div id="popin">
                     <img id="border" style={{maxWidth:'100%',maxHeight:'100%'}} src={border}/>
-                    <Presentation quadri={idSkooler}/>
+                    <Presentation quadri={idSkooler} photo={photo}/>
                 </div>
                 <img style={closeButtonStyle} src={closeIcon} alt={"close button"} onClick={()=>setIsOpen(false)}/>
             </Modal>
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
-                    <Tree setIsOpen={setIsOpen} setIdSkooler={setIdSkooler}/>
+                    <Tree setIsOpen={setIsOpen} setIdSkooler={setIdSkooler} setPhoto={setPhoto}/>
                 </div>
             </div>
 

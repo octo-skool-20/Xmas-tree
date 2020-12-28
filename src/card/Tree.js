@@ -33,7 +33,7 @@ import elri from "../assets/photos/elri.png";
 import boxi from "../assets/photos/boxi.png";
 import Gifts from "./Gifts";
 
-export default function Tree({setIsOpen, setIdSkooler}) {
+export default function Tree({setIsOpen, setIdSkooler, setPhoto}) {
     let treeStyle = {
         display: 'block',
         margin: '0 auto',
@@ -47,19 +47,19 @@ export default function Tree({setIsOpen, setIdSkooler}) {
         <div id="xMasTree">
             <Star/>
             <img src={christmas_tree_no_star} alt="christmas tree png" style={treeStyle}/>
-            <Ball id="chaz" svg={ChazBall} onClick={() => {setIsOpen(true);setIdSkooler("chaz")}} photo={chaz}/>
-            <Ball id="bern" svg={BernBall} onClick={() => {setIsOpen(true);setIdSkooler("bern")}} photo={bern}/>
-            <Ball id="boxi" svg={BoxiBall} onClick={() => {setIsOpen(true);setIdSkooler("boxi")}} photo={boxi}/>
-            <Ball id="ceme" svg={CemeBall} onClick={() => {setIsOpen(true);setIdSkooler("ceme")}} photo={ceme}/>
-            <Ball id="elri" svg={ElriBall} onClick={() => {setIsOpen(true);setIdSkooler("elri")}} photo={elri}/>
-            <Ball id="jamu" svg={JamuBall} onClick={() => {setIsOpen(true);setIdSkooler("jamu")}} photo={jamu}/>
-            <Ball id="jufe" svg={JufeBall} onClick={() => {setIsOpen(true);setIdSkooler("jufe")}} photo={jufe}/>
-            <Ball id="lela" svg={LelaBall} onClick={() => {setIsOpen(true);setIdSkooler("lela")}} photo={lela}/>
-            <Ball id="masi" svg={MasiBall} onClick={() => {setIsOpen(true);setIdSkooler("masi")}} photo={masi}/>
-            <Ball id="suli" svg={SuliBall} onClick={() => {setIsOpen(true);setIdSkooler("suli")}} photo={suli}/>
-            <Ball id="vaga" svg={VagaBall} onClick={() => {setIsOpen(true);setIdSkooler("vaga")}} photo={vaga}/>
-            <Ball id="waji" svg={WajiBall} onClick={() => {setIsOpen(true);setIdSkooler("waji")}} photo={waji}/>
-            <Ball id="kram" svg={KramBall} onClick={() => {setIsOpen(true);setIdSkooler("kram")}} photo={kram}/>
+            <Ball id="chaz" svg={ChazBall} onClick={() => {setIsOpen(true);setIdSkooler("chaz");setPhoto(chaz)}} photo={chaz}/>
+            <Ball id="bern" svg={BernBall} onClick={() => {setIsOpen(true);setIdSkooler("bern");setPhoto(bern)}} photo={bern}/>
+            <Ball id="boxi" svg={BoxiBall} onClick={() => {setIsOpen(true);setIdSkooler("boxi");setPhoto(boxi)}} photo={boxi}/>
+            <Ball id="ceme" svg={CemeBall} onClick={() => {setIsOpen(true);setIdSkooler("ceme");setPhoto(ceme)}} photo={ceme}/>
+            <Ball id="elri" svg={ElriBall} onClick={() => {setIsOpen(true);setIdSkooler("elri");setPhoto(elri)}} photo={elri}/>
+            <Ball id="jamu" svg={JamuBall} onClick={() => {setIsOpen(true);setIdSkooler("jamu");setPhoto(jamu)}} photo={jamu}/>
+            <Ball id="jufe" svg={JufeBall} onClick={() => {setIsOpen(true);setIdSkooler("jufe");setPhoto(jufe)}} photo={jufe}/>
+            <Ball id="lela" svg={LelaBall} onClick={() => {setIsOpen(true);setIdSkooler("lela");setPhoto(lela)}} photo={lela}/>
+            <Ball id="masi" svg={MasiBall} onClick={() => {setIsOpen(true);setIdSkooler("masi");setPhoto(masi)}} photo={masi}/>
+            <Ball id="suli" svg={SuliBall} onClick={() => {setIsOpen(true);setIdSkooler("suli");setPhoto(suli)}} photo={suli}/>
+            <Ball id="vaga" svg={VagaBall} onClick={() => {setIsOpen(true);setIdSkooler("vaga");setPhoto(vaga)}} photo={vaga}/>
+            <Ball id="waji" svg={WajiBall} onClick={() => {setIsOpen(true);setIdSkooler("waji");setPhoto(waji)}} photo={waji}/>
+            <Ball id="kram" svg={KramBall} onClick={() => {setIsOpen(true);setIdSkooler("kram");setPhoto(kram)}} photo={kram}/>
             <Gifts style={treeStyle}/>
 
         </div>

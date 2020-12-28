@@ -1,7 +1,7 @@
 import React from "react";
 import skool from "./../assets/skool.json"
 
-export default function Presentation({quadri}) {
+export default function Presentation({quadri, photo}) {
 
     const skoolers = skool.skoolers
     const mentor = skool.mentor
@@ -33,10 +33,12 @@ export default function Presentation({quadri}) {
     const passionField = "Passion(s) : "
     const minibioField = "À propos : "
 
-    const compValue = jsonData.competence1.concat(jsonData.competence2 ? " & " + jsonData.competence2 : "")
-    const langValue = jsonData.langProg1.concat(jsonData.langProg2 ? " & " + jsonData.langProg2 : "")
-    const passionValue = jsonData.passion1.concat(jsonData.passion2 ? " & " + jsonData.passion2 : "")
-    const minibioValue = jsonData.minibio
+    const compValue = jsonData.competence1.concat(jsonData.competence2 ? ", " + jsonData.competence2 : "")
+    const langValue = jsonData.langProg1.concat(jsonData.langProg2 ? ", " + jsonData.langProg2 : "")
+    const passionValue = jsonData.passion1.concat(jsonData.passion2 ? ", " + jsonData.passion2 : "")
+    const minibioValue = jsonData.minibio ? jsonData.minibio : ""
+
+    const photoPath = "/assets/photos/"+ quadri +".png"
 
     function PComponent({fieldName, fieldValue, style}) {
         return (
@@ -51,14 +53,17 @@ export default function Presentation({quadri}) {
             )
 
     }
+    console.log(photoPath)
 
     return (
         <div style={styleSheet}>
-            <h2>{jsonData.prenom + " " + jsonData.nom} <span>{quadri}</span></h2>
+            <img id="prezPhoto" src={photo} alt={"skooler's photo"}/>
+            <h2><span>{quadri}</span> <br/> {jsonData.prenom} {jsonData.nom.length>8 && <br/>} {jsonData.nom} </h2>
             <PComponent fieldName={compField} fieldValue={compValue}/>
             <PComponent fieldName={langField} fieldValue={langValue}/>
             <PComponent fieldName={passionField} fieldValue={passionValue}/>
-            <PComponent fieldName={minibioField} fieldValue={minibioValue} style={{maxWidth:'90%'}}/>
+            {jsonData.minibio
+            && <PComponent fieldName={minibioField} fieldValue={minibioValue} style={{maxWidth: '90%'}}/>}
         </div>
     )
 }
