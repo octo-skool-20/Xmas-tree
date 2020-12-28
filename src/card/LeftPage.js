@@ -12,11 +12,14 @@ export default function LeftPage() {
             backgroundSize: 'cover',
             width: '100%',
             height: '100%',
-            margin:0
+            margin: 0
 
         }}>
-            <div>
-                <span>
+            <div  >
+                <span >
+                    <div className="title">Hello world</div>
+                    <p>BERN, MASI, LELA, CEME, WAJI, MIWE, JUFE, BOXI, JAMU, LRIVA, GASUL, KRAM, CHAZ</p>
+
                     Bli bla blou bla
                 </span>
             </div>
