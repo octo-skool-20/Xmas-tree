@@ -64,14 +64,6 @@ function Card() {
                 <img id="border" style={{ maxWidth: '100%', maxHeight: '100%' }} src={border} />
                 <Presentation quadri={idSkooler} photo={photo} />
             </div>
-            <img style={closeButtonStyle} src={closeIcon} alt={"close button"} onClick={() => setIsOpen(false)} />
-        </Modal>
-        <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
-            onClickAway={() => setIsOpen(false)}>
-            <div id="popin">
-                <img id="border" style={{ maxWidth: '100%', maxHeight: '100%' }} src={border} />
-                <Presentation quadri={idSkooler} photo={photo} />
-            </div>
             <img id="closeButton" src={closeIcon} alt={"close button"}
                 onClick={() => setIsOpen(false)}
             />
@@ -83,7 +75,7 @@ function Card() {
                 </div>
             </div>
 
-            <div id="card-front" class="folded_corner">
+            <div id="card-front" className="folded_corner">
                 <div className="wrap ">
                     {!isCardOpened && <HomePage></HomePage>}
                 </div>
