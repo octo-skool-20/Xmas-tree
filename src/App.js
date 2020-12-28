@@ -3,15 +3,15 @@ import Card from './card/Card.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
 
-      </header>
+      <div className="App">
+          <header className="App-header">
 
-      <body>
-       <Card/>
-      </body>
-    </div>
+          </header>
+
+          <Card/>
+      </div>
+
   );
 }
 

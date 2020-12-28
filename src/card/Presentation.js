@@ -31,7 +31,7 @@ export default function Presentation({quadri}) {
     const compField = "Compétences(s) : "
     const langField = "Langages(s) préféré(s) : "
     const passionField = "Passion(s) : "
-    const minibioField = "À mon propos : "
+    const minibioField = "À propos : "
 
     const compValue = jsonData.competence1.concat(jsonData.competence2 ? " & " + jsonData.competence2 : "")
     const langValue = jsonData.langProg1.concat(jsonData.langProg2 ? " & " + jsonData.langProg2 : "")
