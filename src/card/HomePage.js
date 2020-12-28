@@ -9,7 +9,7 @@ export default function HomePage() {
             <p>Toute la skool 20 vous souhaite un joyeux <span className="strong-word">Noël</span> et une bonne <span className="strong-word">année !</span> </p>
             <hr className="solid"></hr>
 
-            <p>BERN, MASI, LELA, CEME, WAJI, MIWE, JUFE, BOXI, JAMUE, LRIVA, GASUL, KRAM, CHAZ</p>
+            <p>BERN, MASI, LELA, CEME, WAJI, MIWE, JUFE, BOXI, JAMU, LRIVA, GASUL, KRAM, CHAZ</p>
         </div>
     );
 }
