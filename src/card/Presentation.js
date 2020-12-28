@@ -6,7 +6,7 @@ export default function Presentation({quadri, photo}) {
     const skoolers = skool.skoolers
     const mentor = skool.mentor
 
-    const jsonData = skoolers[quadri]
+    const jsonData = skoolers[quadri] ? skoolers[quadri] : mentor.miwe
 
     const styleSheet = {
         position:'absolute',
@@ -38,8 +38,6 @@ export default function Presentation({quadri, photo}) {
     const passionValue = jsonData.passion1.concat(jsonData.passion2 ? ", " + jsonData.passion2 : "")
     const minibioValue = jsonData.minibio ? jsonData.minibio : ""
 
-    const photoPath = "/assets/photos/"+ quadri +".png"
-
     function PComponent({fieldName, fieldValue, style}) {
         return (
             <p className="prez" style={style?style:{}}>
@@ -53,7 +51,6 @@ export default function Presentation({quadri, photo}) {
             )
 
     }
-    console.log(photoPath)
 
     return (
         <div style={styleSheet}>

@@ -31,6 +31,8 @@ import kram from "../assets/photos/kram.png";
 import ceme from "../assets/photos/ceme.png";
 import elri from "../assets/photos/elri.png";
 import boxi from "../assets/photos/boxi.png";
+import miwe from "../assets/photos/miwe.png";
+
 import Gifts from "./Gifts";
 
 export default function Tree({setIsOpen, setIdSkooler, setPhoto}) {
@@ -45,7 +47,7 @@ export default function Tree({setIsOpen, setIdSkooler, setPhoto}) {
 
     return (
         <div id="xMasTree">
-            <Star/>
+            <Star clickMeBis={() => {setIsOpen(true);setIdSkooler("miwe");setPhoto(miwe)}} />
             <img src={christmas_tree_no_star} alt="christmas tree png" style={treeStyle}/>
             <Ball id="chaz" svg={ChazBall} onClick={() => {setIsOpen(true);setIdSkooler("chaz");setPhoto(chaz)}} photo={chaz}/>
             <Ball id="bern" svg={BernBall} onClick={() => {setIsOpen(true);setIdSkooler("bern");setPhoto(bern)}} photo={bern}/>

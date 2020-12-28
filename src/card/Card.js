@@ -47,7 +47,9 @@ function Card() {
     const closeButtonStyle = {
         position: 'absolute',
         marginTop: '-12px',
-        left: '46.5%'
+        left: '46.5%',
+        cursor: 'pointer',
+        ':hover' : 'box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);'
     }
 
     return (<>
@@ -59,6 +61,16 @@ function Card() {
             </div>
             <img style={closeButtonStyle} src={closeIcon} alt={"close button"} onClick={() => setIsOpen(false)} />
         </Modal>
+            <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
+                   onClickAway={() => setIsOpen(false)}>
+                <div id="popin">
+                    <img id="border" style={{maxWidth:'100%',maxHeight:'100%'}} src={border}/>
+                    <Presentation quadri={idSkooler} photo={photo}/>
+                </div>
+                <img id="closeButton" src={closeIcon} alt={"close button"}
+                     onClick={()=>setIsOpen(false)}
+                />
+            </Modal>
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
@@ -66,7 +78,7 @@ function Card() {
                 </div>
             </div>
 
-            <div id="card-front">
+            <div id="card-front" class="folded_corner">
                 <div className="wrap cardContent">
                     <h1>Joyeux Noel</h1>
                     <p>En ces temps de <span className="strong-word">fête</span>, on a tous une mission en <span className="strong-word">tête.</span></p>
