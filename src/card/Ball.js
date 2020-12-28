@@ -5,11 +5,16 @@ export default function Ball({id, svg, onClick, photo}) {
 
     const [onHoverSvg, setOnHoverSvg] = useState(svg);
 
+    const onBallHover = function (photo) {
+        console.log("okok")
+        setOnHoverSvg(photo)
+    }
+
     return (
-        <div id={id} >
+        <div id={id} style={{ cursor: 'pointer' }}>
             <img src={onHoverSvg} alt={altMsg}
                  onClick={onClick}
-                 onMouseOver={() => setOnHoverSvg(photo)}
+                 onMouseOver={() => onBallHover(photo)}
                  onMouseOut={() => setOnHoverSvg(svg)}
             />
         </div>
