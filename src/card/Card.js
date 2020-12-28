@@ -61,7 +61,7 @@ function Card() {
         <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
             onClickAway={() => setIsOpen(false)}>
             <div id="popin">
-                <img id="border" style={{ maxWidth: '100%', maxHeight: '100%' }} src={border} />
+                <img id="border" style={{ maxWidth: '100%', maxHeight: '100%' }} src={border} alt="background border"/>
                 <Presentation quadri={idSkooler} photo={photo} />
             </div>
             <img id="closeButton" src={closeIcon} alt={"close button"}
