@@ -67,9 +67,11 @@ function Card() {
             </div>
 
             <div id="card-front">
-                <div className="wrap">
+                <div className="wrap cardContent">
                     <h1>Joyeux Noel</h1>
+                    Lorem ipsum dolor sit <span className="strong-word">amet</span>, consectetur adipiscing elit, sed do eiusmod <span className="strong-word">tempor</span> incididunt ut <span className="strong-word">labore</span> et dolore magna <span className="strong-word">aliqua</span>.
                 </div>
+
                 <button onClick={open_card} id="open">&gt;</button>
                 <button onClick={close_card} id="close">&lt;</button>
             </div>
