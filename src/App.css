@@ -14,7 +14,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 10vh;
     position: relative;
 }
 
@@ -35,11 +35,16 @@ body {
 
 #card-front {
   color: #FFDFDF;
+    z-index: 1000;
 }
 
 #card, #card-front, #card-inside {
   height: 80vh;
   width: 80% !important;
+    max-width: 600px;
+    min-width: 400px;
+    max-height: 600px;
+    min-height: 400px;
 }
 
 .wrap {
@@ -209,39 +214,41 @@ footer {
   text-align: center;
 }
 
-#flo {
+#chaz {
     position: absolute;
-    height: 5vh;
-    max-width: 5vh;
-    top: 50%;
-    left: 50%;
+    height: 8%;
+    max-width: 8%;
+    top: 44%;
+    left: 34%;
+    z-index: 10;
 }
 
-#flo:hover {
-    height: 8vh;
-    max-width: 8vh;
-    top: 50%;
-    left: 50%;
+#chaz:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
 }
 
-#flo img {
+#chaz img {
     width: 100%;
     height: 100%;
 }
 
 #bern {
     position: absolute;
-    height: 5vh;
-    max-width: 5vh;
-    top: 40%;
-    left: 40%;
+    height: 8%;
+    max-width: 8%;
+    top: 60%;
+    left: 33%;
+    z-index: 10;
 }
 
 #bern:hover {
-    height: 8vh;
-    max-width: 8vh;
-    top: 40%;
-    left: 40%;
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
 }
 
 #bern img {
@@ -249,20 +256,147 @@ footer {
     height: 100%;
 }
 
+#boxi {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 30%;
+    left: 40%;
+    z-index: 10;
+}
+
+#boxi:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#boxi img {
+    width: 100%;
+    height: 100%;
+}
+
+#ceme {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 52%;
+    left: 45%;
+    z-index: 10;
+}
+
+#ceme:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#ceme img {
+    width: 100%;
+    height: 100%;
+}
+
+#elri {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 60%;
+    left: 62%;
+    z-index: 10;
+}
+
+#elri:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#elri img {
+    width: 100%;
+    height: 100%;
+}
+
+#jamu {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 66%;
+    left: 51%;
+    z-index: 10;
+}
+
+#jamu:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#jamu img {
+    width: 100%;
+    height: 100%;
+}
+
+#jufe {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 27%;
+    left: 52%;
+    z-index: 10;
+}
+
+#jufe:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#jufe img {
+    width: 100%;
+    height: 100%;
+}
+
+#lela {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 78%;
+    left: 41%;
+    z-index: 10;
+}
+
+#lela:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#lela img {
+    width: 100%;
+    height: 100%;
+}
+
 #masi {
     position: absolute;
-    height: 5vh;
-    max-width: 5vh;
-    top: 75%;
-    left: 30%;
+    height: 8%;
+    max-width: 8%;
+    top: 73%;
+    left: 26%;
+    z-index: 10;
 }
 
 #masi:hover {
-    height: 8vh;
-    max-width: 8vh;
-    top: 75%;
-    left: 30%;
-    background: url("assets/xMasTree.png");
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+
 }
 
 #masi img {
@@ -270,10 +404,92 @@ footer {
     height: 100%;
 }
 
+#suli {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 76%;
+    left: 67%;
+    z-index: 10;
+}
+
+#suli:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#suli img {
+    width: 100%;
+    height: 100%;
+}
+
+#vaga {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 45%;
+    left: 55%;
+    z-index: 10;
+}
+
+#vaga:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#vaga img {
+    width: 100%;
+    height: 100%;
+}
+
+#waji {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 82%;
+    left: 53%;
+    z-index: 10;
+}
+
+#waji:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#waji img {
+    width: 100%;
+    height: 100%;
+}
+
+#kram {
+    position: absolute;
+    height: 8%;
+    max-width: 8%;
+    top: 17%;
+    left: 46%;
+    z-index: 10;
+}
+
+#kram:hover {
+    width: 15%;
+    height: auto;
+    max-width: 15%;
+    z-index: 10;
+}
+
+#kram img {
+    width: 100%;
+    height: 100%;
+}
+
+
 /*
-TODO
-ajouter chaque personne les 3 catégories de styles qui vont avec, suivant le modèle ci-dessus
-le positionnement est à gérer à la main
 TODO
 mentor en boule ou en étoile ?
 */
@@ -309,4 +525,34 @@ mentor en boule ou en étoile ?
     top: 0;
     right: 0;
     bottom: 0;
+}
+
+#panel {
+    background: white;
+    width: 100vw;
+    height: 100vh;
+    border: solid 1px red;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    bottom: 0;
+
+}
+
+@media (min-width: 650px){
+
+}
+
+#giftsDiv {
+    width: 100%;
+    height: 47%;
+    position: absolute;
+    top: 80%
+}
+
+#giftsDiv img {
+    width: 100%;
+    object-fit: cover; /*magic*/
+    transform: rotate(-5deg);
+    opacity: 0.9;
 }

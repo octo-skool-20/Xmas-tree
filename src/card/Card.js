@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Tree from "./Tree";
-import FloBall from "./../assets/balls/FloBall.svg";
+import FloBall from "../assets/balls/ChazBall.svg";
 import Modal from "react-awesome-modal";
 import Presentation from "./Presentation";
 import border from "../assets/xmas-border.png";
@@ -60,11 +60,7 @@ function Card() {
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
-                    <Tree id={"flo"} svg={FloBall} onClick={() => {
-                        setIsOpen(true);
-                        console.log("clicked");}}
-                          setIsOpen={setIsOpen}
-                    setIdSkooler={setIdSkooler}/>
+                    <Tree setIsOpen={setIsOpen} setIdSkooler={setIdSkooler}/>
                 </div>
             </div>
 

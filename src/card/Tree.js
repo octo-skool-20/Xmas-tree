@@ -1,16 +1,39 @@
 import React from "react";
 import Reward from 'react-rewards';
-import logo from "../assets/octo_logo.png";
-import suli from "../assets/photos/suli.png";
-
 import christmas_tree_no_star from "../assets/christmas_tree_no_star.png";
 import Star from "./Star";
 import Ball from "./Ball";
-import FloBall from "../assets/balls/FloBall.svg";
-import MasiBall from "../assets/balls/MasiBall.svg";
+import ChazBall from "../assets/balls/ChazBall.svg";
 import BernBall from "../assets/balls/BernBall.svg";
+import BoxiBall from "../assets/balls/BoxiBall.svg";
+import CemeBall from "../assets/balls/CemeBall.svg";
+import ElriBall from "../assets/balls/ElriBall.svg";
+import JamuBall from "../assets/balls/JamuBall.svg";
+import JufeBall from "../assets/balls/JufeBall.svg";
+import LelaBall from "../assets/balls/LelaBall.svg";
+import MasiBall from "../assets/balls/MasiBall.svg";
+import SuliBall from "../assets/balls/SuliBall.svg";
+import VagaBall from "../assets/balls/VagaBall.svg";
+import WajiBall from "../assets/balls/WajiBall.svg";
+import KramBall from "../assets/balls/KramBall.svg";
 
-export default function Tree({id, svg, onClick, setIsOpen, setIdSkooler}) {
+import logo from "../assets/octo_logo.png";
+import bern from "../assets/photos/bern.png";
+import chaz from "../assets/photos/chaz.png";
+import jamu from "../assets/photos/jamu.png";
+import jufe from "../assets/photos/jufe.png";
+import lela from "../assets/photos/lela.png";
+import masi from "../assets/photos/masi.png";
+import suli from "../assets/photos/suli.png";
+import vaga from "../assets/photos/vaga.png";
+import waji from "../assets/photos/waji.png";
+import kram from "../assets/photos/kram.png";
+import ceme from "../assets/photos/ceme.png";
+import elri from "../assets/photos/elri.png";
+import boxi from "../assets/photos/boxi.png";
+import Gifts from "./Gifts";
+
+export default function Tree({setIsOpen, setIdSkooler}) {
     let treeStyle = {
         display: 'block',
         margin: '0 auto',
@@ -19,14 +42,27 @@ export default function Tree({id, svg, onClick, setIsOpen, setIdSkooler}) {
         maxWidth:'100%'
     }
 
+
     return (
         <div id="xMasTree">
             <Star/>
             <img src={christmas_tree_no_star} alt="christmas tree png" style={treeStyle}/>
-            <Ball id={id} svg={svg} onClick={onClick} photo={logo}/>
-            <Ball id="masi" svg={MasiBall} onClick={() => {setIsOpen(true);setIdSkooler("masi")}} photo={logo}/>
-            <Ball id="bern" svg={BernBall} onClick={() => {setIsOpen(true);setIdSkooler("bern")}} photo={suli}/>
+            <Ball id="chaz" svg={ChazBall} onClick={() => {setIsOpen(true);setIdSkooler("chaz")}} photo={chaz}/>
+            <Ball id="bern" svg={BernBall} onClick={() => {setIsOpen(true);setIdSkooler("bern")}} photo={bern}/>
+            <Ball id="boxi" svg={BoxiBall} onClick={() => {setIsOpen(true);setIdSkooler("boxi")}} photo={boxi}/>
+            <Ball id="ceme" svg={CemeBall} onClick={() => {setIsOpen(true);setIdSkooler("ceme")}} photo={ceme}/>
+            <Ball id="elri" svg={ElriBall} onClick={() => {setIsOpen(true);setIdSkooler("elri")}} photo={elri}/>
+            <Ball id="jamu" svg={JamuBall} onClick={() => {setIsOpen(true);setIdSkooler("jamu")}} photo={jamu}/>
+            <Ball id="jufe" svg={JufeBall} onClick={() => {setIsOpen(true);setIdSkooler("jufe")}} photo={jufe}/>
+            <Ball id="lela" svg={LelaBall} onClick={() => {setIsOpen(true);setIdSkooler("lela")}} photo={lela}/>
+            <Ball id="masi" svg={MasiBall} onClick={() => {setIsOpen(true);setIdSkooler("masi")}} photo={masi}/>
+            <Ball id="suli" svg={SuliBall} onClick={() => {setIsOpen(true);setIdSkooler("suli")}} photo={suli}/>
+            <Ball id="vaga" svg={VagaBall} onClick={() => {setIsOpen(true);setIdSkooler("vaga")}} photo={vaga}/>
+            <Ball id="waji" svg={WajiBall} onClick={() => {setIsOpen(true);setIdSkooler("waji")}} photo={waji}/>
+            <Ball id="kram" svg={KramBall} onClick={() => {setIsOpen(true);setIdSkooler("kram")}} photo={kram}/>
+            <Gifts style={treeStyle}/>
 
         </div>
     );
 }
+
