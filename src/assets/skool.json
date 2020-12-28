@@ -23,6 +23,111 @@
       "passion2": "Bonsais",
       "minibio": "Simon naquit en l'an de grâce 1989. Il entre chez Octo en 2020 soit 31 ans après",
       "color": "#fcc2e9"
+    },
+    "lela": {
+      "nom": "Lesik",
+      "prenom": "Lana",
+      "competence1": "Dev mobile",
+      "competence2": "Blagues moins drôles mais pas mal",
+      "langProg1": "Swift",
+      "langProg2": "Kotlin",
+      "passion1": "Photos",
+      "passion2": "Surf :P",
+      "minibio": "Combler le vide dans les conversations (PAS MYTHO)",
+      "color": "#ffd700"
+    },
+    "ceme": {
+      "nom": "Mea",
+      "prenom": "Cédric",
+      "competence1": "Data Science",
+      "competence2": "Adaptation",
+      "langProg1": "Python",
+      "langProg2": "Java",
+      "passion1": "Football",
+      "passion2": "Justin Bieber",
+      "minibio": "Faux timide :)",
+      "color": "#000000"
+    },
+    "waji": {
+      "nom": "Khouaji",
+      "prenom": "Walid",
+      "competence1": "Dev FullStack",
+      "competence2": "¯\\_(ツ)_\/¯",
+      "langProg1": "Javascript & Typescript",
+      "langProg2": "CSS ❤️",
+      "passion1": "Sneakers",
+      "passion2": "Montres",
+      "minibio": "I like trains (je me demande combien de personne ici on la réf -> TBBT)",
+      "color": "#ff0000"
+    },
+    "jufe": {
+      "nom": "Ferrer",
+      "prenom": "Juliette",
+      "competence1": "Dev FullStack",
+      "competence2": "Ninja",
+      "langProg1": "Ruby",
+      "langProg2": "Javascript",
+      "passion1": "Boxe française",
+      "passion2": "Marsupiaux",
+      "minibio": "Git's a Trap!",
+      "color": "#900C3F"
+    },
+    "boxi": {
+      "nom": "Bouchée",
+      "prenom": "Maxime",
+      "competence1": "Dev Backend",
+      "langProg1": "Java",
+      "langProg2": "Python",
+      "passion1": "xxx",
+      "passion2": "xxx",
+      "minibio": "xxx",
+      "color": "#000000"
+    },
+    "jamu": {
+      "nom": "Jaufurally",
+      "prenom": "Muhammad Nawfaz",
+      "competence1": "Dev FullStack",
+      "competence2": "Système embarqué",
+      "langProg1": "Java",
+      "langProg2": "C++ & Javascript",
+      "passion1": "Football",
+      "passion2": "Montres",
+      "minibio": "I love Arsenal ❤️",
+      "color": "#ffffff"
+    },
+    "elri": {
+      "nom": "Elloumi",
+      "prenom": "Ritchie",
+      "competence1": "Dev FullStack",
+      "competence2": "Multilangues",
+      "langProg1": "Javascript",
+      "langProg2": "Solidity",
+      "passion1": "Manger",
+      "minibio": "XXX",
+      "color": "#000000"
+    },
+    "vaga": {
+      "nom": "Vanneste",
+      "prenom": "Gautier",
+      "competence1": "Dev FullStack",
+      "competence2": "Data Science",
+      "langProg1": "Javascript",
+      "langProg2": "C++ & Java & Python",
+      "passion1": "Ski/Snowboard",
+      "passion2": "Échecs",
+      "minibio": "Auditeur financier dans une précédente vie, et doyen de la skool 20! \uD83D\uDC74\uD83C\uDFFB",
+      "color": "#0000FF"
+    },
+    "suli": {
+      "nom": "Li",
+      "prenom": "Suxue",
+      "competence1": "Dev FullStack",
+      "langProg1": "Java & Python",
+      "langProg2": "Javascript & Typescript",
+      "passion1": "Manger &#1F525",
+      "passion2": "Chanter à tue-tête &#1F3B6",
+      "minibio": "Benjamine de la skool 20 et intolérente à l'alcool &#1F37C ",
+      "color": "#CDE0F2"
     }
   },
 
