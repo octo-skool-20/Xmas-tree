@@ -9,6 +9,10 @@ body {
   padding: 50px;
 }
 
+.App {
+    font-family: 'Avenir',Arial,Helvetica,sans-serif;
+}
+
 #xMasTree {
   display: flex;
   justify-content: center;
@@ -125,7 +129,8 @@ hr.solid {
 
 #card h1 {
     text-align: center;
-    font-family: 'Nobile', sans-serif;
+    font-family: 'Avenir',Arial,Helvetica,sans-serif;
+
     font-style: italic;
     font-size: 70px;
     text-shadow:
@@ -529,15 +534,8 @@ footer {
     height: 100%;
 }
 
-
-/*
-TODO
-mentor en boule ou en étoile ?
-*/
-
 #popin {
     padding: 8px 10px 5px 8px;
-    font-family: 'Gill Sans', sans-serif;
 }
 
 .border {
