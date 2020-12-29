@@ -213,15 +213,16 @@ p.signed {
 
 #card-front button {
   position: absolute;
-  bottom: 1em;
-  right: 12px;
+  bottom: .1em;
+  right: 2px;
   background: transparent;
-  /* color: #FFF; */
+  outline: none;
+  border-color: transparent;
   font-family: 'Nobile', sans-serif;
   font-style: italic;
   font-weight: bold;
-  font-size: 1.5em;
-  padding: .5em;
+  font-size: 3.3em;
+  padding: .7em;
   border: none;
   /* cursor: pointer; */
           /* box-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 1px rgba(0, 0, 0, .4);
