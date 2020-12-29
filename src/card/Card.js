@@ -98,8 +98,8 @@ function Card() {
                     {isCardOpened && <LeftPage></LeftPage>}
 
                 </div>
-                <button onClick={open_card} id="open">&gt;</button>
-                <button onClick={close_card} id="close">&lt;</button>
+                <button onClick={open_card} id="open"></button>
+                <button onClick={close_card} id="close"></button>
 
             </div>
         </div>
