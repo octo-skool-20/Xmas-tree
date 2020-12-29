@@ -103,7 +103,6 @@
       "langProg1": "Javascript",
       "langProg2": "Solidity",
       "passion1": "Manger",
-      "minibio": "XXX",
       "color": "#000000"
     },
     "vaga": {
@@ -129,14 +128,13 @@
       "color": "#CDE0F2"
     },
     "kram": {
-      "nom": "",
+      "nom": "Haytham Mohammed",
       "prenom": "Karam",
-      "competence1": "xxx",
-      "langProg1": "xxx",
-      "langProg2": "xxx",
-      "passion1": "xxx",
-      "passion2": "xxx",
-      "minibio": "xxx",
+      "competence1": "Dev Fullstack ",
+      "langProg1": "JavaScript",
+      "langProg2": "Java",
+      "passion1": "Les Percussions",
+      "passion2": "Le voyage",
       "color": "#E0FA05"
     },
     "chaz": {
