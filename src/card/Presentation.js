@@ -8,6 +8,7 @@ export default function Presentation({quadri, photo}) {
     const mentor = skool.mentor
 
     const jsonData = skoolers[quadri] ? skoolers[quadri] : mentor.miwe
+    const isMentor = skoolers[quadri] ? false : true;
 
     const styleSheet = {
 
@@ -45,7 +46,9 @@ export default function Presentation({quadri, photo}) {
     return (
         <div style={styleSheet}>
             <img id="prezPhoto" src={photo} alt={"skooler's photo"}/>
-            <h2><span>{quadri}</span> <br/> {jsonData.prenom} {jsonData.nom.length>8 && <br/>} {jsonData.nom} </h2>
+            <h2><span>{quadri}</span>
+                {isMentor && <span id="mention"> (mentor)</span> } <br/>
+                {jsonData.prenom} {jsonData.nom.length>8 && <br/>} {jsonData.nom} </h2>
             <PComponent fieldName={compField} fieldValue={compValue}/>
             <PComponent fieldName={langField} fieldValue={langValue}/>
             <PComponent fieldName={passionField} fieldValue={passionValue} style={{maxWidth: '88%'}}/>
