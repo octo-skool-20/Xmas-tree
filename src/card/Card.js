@@ -10,6 +10,7 @@ import HomePage from "./HomePage";
 import LeftPage from "./LeftPage";
 import guirlandes1 from './../assets/guirlandesLumi1.png';
 import guirlandes2 from './../assets/guirlandesLumi2.png';
+import Background from "../assets/xmas-border.png";
 
 
 function Card() {
@@ -51,6 +52,16 @@ function Card() {
         stopMusic()
     }
 
+    const popinStyle = {
+        backgroundImage: `url(${Background})`,
+        backgroundSize: '100% 100%',
+        width: '100%',
+        height: '100%',
+        margin: 0,
+        display: 'content',
+        padding: '7% 6%'
+    }
+
     const closeButtonStyle = {
         position: 'absolute',
         marginTop: '-12px',
@@ -62,13 +73,13 @@ function Card() {
     return (<>
         <Modal visible={isOpen} width="650" height="500" effect="fadeInUp"
             onClickAway={() => setIsOpen(false)}>
-            <div id="popin">
-                <img id="border" style={{ maxWidth: '100%', maxHeight: '100%' }} src={border} alt="background border"/>
+            <div id="popin" style={popinStyle}>
                 <Presentation quadri={idSkooler} photo={photo} />
+                <img id="closeButton" src={closeIcon} alt={"close button"}
+                     onClick={() => setIsOpen(false)}
+                />
             </div>
-            <img id="closeButton" src={closeIcon} alt={"close button"}
-                onClick={() => setIsOpen(false)}
-            />
+
         </Modal>
         <div id="card">
             <div id="card-inside">

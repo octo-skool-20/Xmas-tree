@@ -1,5 +1,6 @@
 import React from "react";
-import skool from "./../assets/skool.json"
+import skool from "./../assets/skool.json";
+import Background from "./../assets/xmas-border.png";
 
 export default function Presentation({quadri, photo}) {
 
@@ -9,18 +10,7 @@ export default function Presentation({quadri, photo}) {
     const jsonData = skoolers[quadri] ? skoolers[quadri] : mentor.miwe
 
     const styleSheet = {
-        position:'absolute',
-        width:'80%',
-        height: '80%',
-        fontFamily: 'monospace arial',
 
-        borderColor: jsonData.color,
-
-        fontVariantCaps: 'petite-caps',
-        fontSize:'27px',
-        lineHeight:1,
-        top:'50px',
-        left:'50px'
     }
 
     const fieldStyle = {
@@ -58,9 +48,9 @@ export default function Presentation({quadri, photo}) {
             <h2><span>{quadri}</span> <br/> {jsonData.prenom} {jsonData.nom.length>8 && <br/>} {jsonData.nom} </h2>
             <PComponent fieldName={compField} fieldValue={compValue}/>
             <PComponent fieldName={langField} fieldValue={langValue}/>
-            <PComponent fieldName={passionField} fieldValue={passionValue}/>
+            <PComponent fieldName={passionField} fieldValue={passionValue} style={{maxWidth: '88%'}}/>
             {jsonData.minibio
-            && <PComponent fieldName={minibioField} fieldValue={minibioValue} style={{maxWidth: '90%'}}/>}
+            && <PComponent fieldName={minibioField} fieldValue={minibioValue} style={{maxWidth: '85%'}}/>}
         </div>
     )
 }
