@@ -649,3 +649,25 @@ footer {
 #closeButton:hover {
     box-shadow: 2px 2px 2px 1px darkgrey
 }
+
+#guirlandes1 {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    transform: rotate(-20deg);
+    left: -15px;
+    top: 0;
+    transform-origin: top right;
+    opacity: 0.8;
+}
+
+#guirlandes2 {
+    width: 40%;
+    height: auto;
+    position: absolute;
+    transform: rotate(20deg);
+    right: -15px;
+    top: 0;
+    transform-origin: top left;
+    opacity: 0.8;
+}

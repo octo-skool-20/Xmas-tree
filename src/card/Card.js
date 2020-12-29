@@ -8,6 +8,8 @@ import closeIcon from "./../assets/closeIcon.png";
 import logo from "./../assets/octo_logo.png"
 import HomePage from "./HomePage";
 import LeftPage from "./LeftPage";
+import guirlandes1 from './../assets/guirlandesLumi1.png';
+import guirlandes2 from './../assets/guirlandesLumi2.png';
 
 
 function Card() {
@@ -71,6 +73,8 @@ function Card() {
         <div id="card">
             <div id="card-inside">
                 <div className="wrap">
+                    <img id="guirlandes1" src={guirlandes1}/>
+                    <img id="guirlandes2" src={guirlandes2}/>
                     <Tree setIsOpen={setIsOpen} setIdSkooler={setIdSkooler} setPhoto={setPhoto} />
                 </div>
             </div>
